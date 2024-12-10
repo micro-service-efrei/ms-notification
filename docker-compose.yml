@@ -16,6 +16,7 @@ services:
       - NOTIFICATION_EMAIL=${NOTIFICATION_EMAIL}
     networks:
       - book-network
+      - ms-network
     restart: unless-stopped
     command: >
       sh -c "
@@ -35,3 +36,5 @@ networks:
   book-network:
     external: true
     name: book-network
+  ms-network:
+    external: true
