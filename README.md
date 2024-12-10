@@ -52,7 +52,7 @@ RABBITMQ_URL=amqp://rabbitmq:5672
 RABBITMQ_QUEUE_NAME=book_events
 NOTIFICATION_EMAIL=email_destinataire
 
-🏃‍♂️ Lancement
+## 🏃‍♂️ Lancement
 
 Avec Docker :
 
@@ -89,13 +89,13 @@ Le service utilise :
 }
 ```
 
-🔒 Sécurité
+## 🔒 Sécurité
 
 - Utilisation de variables d'environnement pour les informations sensibles
 - Validation des événements avant traitement
 - Gestion des erreurs et retry automatique pour RabbitMQ
 
-📝 Logs
+## 📝 Logs
 Le service fournit des logs détaillés pour :
 
 - La connexion à RabbitMQ
